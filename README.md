@@ -4,3 +4,6 @@
 
 ## Operations
 The full library of operations can be found [here](/op/)
+
+## Sample code
+You find sample code in each of the operations
