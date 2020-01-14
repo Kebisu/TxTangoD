@@ -11,11 +11,11 @@
 ## Request
 \* is mandatory
 
-- [Login block](/op/loginblock.md)*
+- [Login block](/detail/loginblock.md)*
 - All the other input parameters
 
 ## Response
-Derived from result object, contains Errors and Warnings: See [result object](/op/resultobject.md)
+Derived from result object, contains Errors and Warnings: See [result object](/detail/resultobject.md)
 - All output parameters
 
 ## Example code

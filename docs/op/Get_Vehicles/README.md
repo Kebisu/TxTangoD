@@ -11,7 +11,7 @@
 ## Request
 \* is mandatory
 
-- [Login block](/TxTangoD/docs/detail/loginblock.md)*
+- [Login block](/detail/loginblock.md)*
 - VehicleSelection: _InterfaceVehicleSelection\_V5_
 	- Identifiers: _array of IdentifierVehicle_
 		- Id: _string_

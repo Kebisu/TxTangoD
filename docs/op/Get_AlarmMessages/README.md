@@ -11,7 +11,7 @@
 ## Request
 \* is mandatory
 
-- [Login block](/op/loginblock.md)*
+- [Login block](/detail/loginblock.md)*
 - AlarmMessageSelection: _AlarmMessageSelection\_V7_
 	- VehicleListStrategySelection*: _VehicleListStrategySelection_, the strategy needs to be initialized with a VehicleStrategyList or a TrailerStrategyList to filter either on vehicles or trailers
 		- IdentifierVehicle: _array of IdentifierVehicle_
@@ -30,7 +30,7 @@
 	- OnlyVisiblePopups: _boolean_
 
 ## Response
-Derived from result object, contains Errors and Warnings: See [result object](/op/resultobject.md)
+Derived from result object, contains Errors and Warnings: See [result object](/detail/resultobject.md)
 - result: _Get_AlarmMessages\_V7_
 	- AlarmMessages: _AlarmMessageResult\_V7_
 		- AlarmId: _int64_

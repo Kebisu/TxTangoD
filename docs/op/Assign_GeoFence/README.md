@@ -9,7 +9,7 @@
 ## Request
 \* is mandatory
 
-- [Login block](/op/loginblock.md)*
+- [Login block](/detail/loginblock.md)*
 - GeoFenceSelection* _AssignGeoFenceSelection_
 	- VehicleListStrategySelection*: _VehicleListStrategySelection_, the strategy needs to be initialized with a VehicleStrategyList or a TrailerStrategyList to filter either on vehicles or trailers
 		- IdentifierVehicle: _array of IdentifierVehicle_
@@ -22,7 +22,7 @@
 			- ID: _string_
 
 ## Response
-Derived from result object, contains Errors and Warnings: See [result object](/op/resultobject.md)
+Derived from result object, contains Errors and Warnings: See [result object](/detail/resultobject.md)
 - result: _AssignGeoFenceResult_
 	- GeoFences: _array of IdentifierGeofenceResult_
 		- TransicsID: _int64_

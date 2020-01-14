@@ -11,7 +11,7 @@
 ## Request
 \* is mandatory, \*\* Either GeoValidity date or ETADate need to be used
 
-- [Login block](/op/loginblock.md)*
+- [Login block](/detail/loginblock.md)*
 - GeofenceInsert: _InterfaceGeoFenceInsert V2_
 	- Geozones: _array of IntefaceGoeZone V2_
 		- Name: _string_
@@ -39,7 +39,7 @@
 		- MaxTimeOfExecution: _int32_
 
 ## Response
-Derived from result object, contains Errors and Warnings: See [result object](/op/resultobject.md)
+Derived from result object, contains Errors and Warnings: See [result object](/detail/resultobject.md)
 - result: _InsertGeoFenceResult_
 	- GeoFenceID: _int64_, unique id of the geofence, need to be stored to easily interpret alarms via [Get_AlarmMessages](/op/Get_AlarmMessages/)
 	- GeoFenceName: _string_
