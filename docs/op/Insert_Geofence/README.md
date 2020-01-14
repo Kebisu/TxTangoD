@@ -112,4 +112,4 @@ Derived from result object, contains Errors and Warnings: See [result object](/d
 ```
 
 ## Geofence information from the TX-CONNECT documentation
-[TX-CONNECT Documentation](http://www.tx-connect.com/HelpWebsite/Content/English/Help/Settings/Geofencing/GeoFencing.htm ':include :type=iframe width=100% height=400px')
+[TX-CONNECT Documentation](https://cinwell.com ':include :type=iframe width=100% height=400px')
