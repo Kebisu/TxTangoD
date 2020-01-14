@@ -1,3 +1,6 @@
+layout: page
+title: "result object"
+permalink: /detail/
 <!-- docs/op/detail/resultobject.md -->
 # Result object
 
