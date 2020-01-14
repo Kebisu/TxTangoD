@@ -1,6 +1,3 @@
-layout: page
-title: "result object"
-permalink: /detail/
 <!-- docs/detail/resultobject.md -->
 # Result object
 
