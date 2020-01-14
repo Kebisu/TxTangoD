@@ -1,4 +1,4 @@
-<!-- docs/op/resultobject.md -->
+<!-- docs/op/detail/resultobject.md -->
 # Result object
 
 > Every response is derived from the result object. This provides a generic way to check on errors and warnings

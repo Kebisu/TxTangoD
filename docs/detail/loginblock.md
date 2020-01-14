@@ -1,4 +1,4 @@
-<!-- docs/op/loginblock.md -->
+<!-- docs/detail/loginblock.md -->
 # Login block
 
 > The login block is part of every web service operation and takes care of the authentication before executing the web service.

@@ -11,7 +11,7 @@
 ## Request
 \* is mandatory
 
-- [Login block](/TxTangoD/docs/details/loginblock.md)*
+- [Login block](/TxTangoD/docs/detail/loginblock.md)*
 - VehicleSelection: _InterfaceVehicleSelection\_V5_
 	- Identifiers: _array of IdentifierVehicle_
 		- Id: _string_
@@ -40,7 +40,7 @@
 		- DiagnosticType: _enumDiagnosticType_: ID, NAME
 
 ## Response
-Derived from result object, contains Errors and Warnings: See [result object](/details/resultobject.md)
+Derived from result object, contains Errors and Warnings: See [result object](/detail/resultobject.md)
 - result: _InterfaceGetVehicleResult V12_
 	- Vehicles: array of _InterfaceVehicleResult V12_
 		- VehicleID: _string_
