@@ -111,5 +111,5 @@ Derived from result object, contains Errors and Warnings: See [result object](/d
 </soap:Envelope>
 ```
 
-## Geofence information from the TX-CONNECT documentation
+## Want to know more about geofences
 [TX-CONNECT Documentation](http://www.tx-connect.com/HelpWebsite/Content/English/Help/Settings/Geofencing/GeoFencing.htm)
