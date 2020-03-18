@@ -10,59 +10,40 @@
 \* is mandatory
 
 - [Login block](/detail/loginblock.md)*
-- GeoFenceSelection* _AssignGeoFenceSelection_
-	- VehicleListStrategySelection*: _VehicleListStrategySelection_, the strategy needs to be initialized with a VehicleStrategyList or a TrailerStrategyList to filter either on vehicles or trailers
-		- IdentifierVehicle: _array of IdentifierVehicle_
-			- Id: _string_
-			- IdentifierVehicleType: _enumIdentifierVehicleType_: ID, TRANSICS\_ID, CODE, LICENSE\_PLATE
-	- GeoFences*: _array of GeoFence_V2_, list of geofence objects that need to be passed via Transics ID or Name
-		- GeoFence: _ArrayOfIdentifierGeoFence_
-			- IdentifierGeoFence: _IdentifierGeoFence_
-			- IdentifierType: _enumGeofenceIdentifierType_: TRANSICS\_ID, NAME
-			- ID: _string_
+- SubscriptionSelection* _SubscriptionSelection_
+	- Features*: _array of FeatureInfo_: an array of features that you want to subscibe to, with the endpoint where they need to be pushed
+		- Feature: FeatureInfo_
+			- Feature: _string_: name of the feature that you would like to subscribe to
+			- FeatureParameters: _string_: JSON object containing a parameters structure that matches the feature you are subscribing to
+         - StreamingTechnologyType: _string_: Currently always 'WebAPI'
+         - StreamingTechnologyDetails: _string_: JSON object containing the URL of the WebAPI
 
 ## Response
 Derived from result object, contains Errors and Warnings: See [result object](/detail/resultobject.md)
-- result: _AssignGeoFenceResult_
-	- GeoFences: _array of IdentifierGeofenceResult_
-		- TransicsID: _int64_
-		- Name: _string_
-	- Vehicles: _array of IdentifierVehicleResult_
-		- LicensePlate: _string_
-		- ID: _string_
-		- TransicsID: _int64_
-		- Code: _string_
-		- Filter: _string_
+- result: _Add_PushSubscriptionsResult_
+	- Success: _string_: true or false
 
 ## Example xml
 **Request**
 ```XML
-<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"  xmlns:tran="http://transics.org">
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:tran="http://transics.org">
    <soapenv:Header/>
    <soapenv:Body>
-      <tran:Assign_GeoFence>
+      <tran:Add_PushSubscriptions>
          <tran:Login>
             ...
          </tran:Login>
-         <tran:GeoFenceSelection>
-            <tran:VehicleListStrategySelection xsi:type="tran:VehicleStrategyList">
-               <tran:IdentifierVehicle>
-                  <tran:IdentifierVehicle>
-                     <tran:IdentifierVehicleType>ID</tran:IdentifierVehicleType>
-                     <tran:Id>ABC123</tran:Id>
-                  </tran:IdentifierVehicle>
-               </tran:IdentifierVehicle>
-            </tran:VehicleListStrategySelection>
-            <tran:GeoFences>
-               <tran:GeoFence>
-                  <tran:IdentifierGeoFence>
-                     <tran:IdentifierType>TRANSICS_ID</tran:IdentifierType>
-                     <tran:ID>45357</tran:ID>
-                  </tran:IdentifierGeoFence>
-               </tran:GeoFence>
-            </tran:GeoFences>
-         </tran:GeoFenceSelection>
-      </tran:Assign_GeoFence>
+         <tran:SubscriptionSelection>
+            <tran:Features>
+               <tran:FeatureInfo>
+                  <tran:Feature>NewAlarm</tran:Feature>
+                  <tran:FeatureParameters>{'AlarmTypes':['Geofencing','ActivityTakesTooLong','DeadlineReadConfirmation','PlanningActivityTakesTooLong','ExternalDevice','CorridorAlarm','LowBattery','Pto','SpeedThresHold','RpmThresHold','EndQuestionPathNotCompletedAlarm','NextStop','Sos','DrivingTimes','Temperature','FuelDecreaseAlarm','HarshBrakeAlarm','DrivingWithoutIsoCableAlarm','RollOverStabilitySupportAlarm','EbsStateAlarm','TyrePressureAlarm','DoorlockAlarm','SensorAlarm','DynamicAlarm','RemoteDiagnosticsAlarm','NoCommunicationAlarm','UnknownDriverForObc','HarshAccelerationAlarm','MaxIdlingAlarm','FuelIncreaseAlarm','SufficientBrakeLiningAlarm','AntiLockBrakingSystemAlarm'],'AlarmPOIEnrichmentRequired':1}</tran:FeatureParameters>
+                  <tran:StreamingTechnologyType>WebAPI</tran:StreamingTechnologyType>
+                  <tran:StreamingTechnologyDetails>{"URL":"https://webhook.site/...."}</tran:StreamingTechnologyDetails>
+               </tran:FeatureInfo>
+            </tran:Features>
+         </tran:SubscriptionSelection>
+      </tran:Add_PushSubscriptions>
    </soapenv:Body>
 </soapenv:Envelope>
 ```
@@ -71,26 +52,13 @@ Derived from result object, contains Errors and Warnings: See [result object](/d
 ```XML
 <soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
    <soap:Body>
-      <Assign_GeoFenceResponse xmlns="http://transics.org">
-         <Assign_GeoFenceResult Executiontime="0.13">
+      <Add_PushSubscriptionsResponse xmlns="http://transics.org">
+         <Add_PushSubscriptionsResult Executiontime="0.116">
             <Errors/>
             <Warnings/>
-            <GeoFences>
-               <IdentifierGeofenceResult>
-                  <TransicsID>45357</TransicsID>
-                  <Name>TestGeoSmart</Name>
-               </IdentifierGeofenceResult>
-            </GeoFences>
-            <Vehicles>
-               <IdentifierVehicleResult>
-                  <ID>ABC123</ID>
-                  <TransicsID>2688</TransicsID>
-                  <Code>Ext_ABC123</Code>
-                  <LicensePlate>LIC-NEW</LicensePlate>
-               </IdentifierVehicleResult>
-            </Vehicles>
-         </Assign_GeoFenceResult>
-      </Assign_GeoFenceResponse>
+            <Success>true</Success>
+         </Add_PushSubscriptionsResult>
+      </Add_PushSubscriptionsResponse>
    </soap:Body>
 </soap:Envelope>
 ```

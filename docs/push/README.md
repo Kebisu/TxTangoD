@@ -26,7 +26,7 @@
 		}
 	```
 **TX-TANGO**
-- The subscriptions are managed via TX-TANGO: Add_Subscriptions, Update_PushSubscriptionsStatus, Get_Subscriptions
+- The subscriptions are managed via TX-TANGO: [Add_PushSubscriptions](/op/Add_PushSubscriptions/README.md), Update_PushSubscriptions_Status, Get_Subscriptions
 - See each TX-TANGO web service for more details
 
 ## Data
@@ -71,3 +71,13 @@
 - Checking what the messages look like without setting up a server can be done easily via https://webhook.site or https://requestbin.com
 - These sites generate an endpoint that you can use in the subscription web service
 - If something is pushed it will be visualized in the browser and you can inspect the message.
+
+## Recovery options
+- Push is a best effort methodology, so we try to push to your endpoint and we have a retry mechanism.
+- But what if there are connection issues, server problems, ... and the message cannot be pushed.
+- That's why we have foreseen a backup/recovery mechanism.
+- If we cannot deliver a message after a couple of retries, this will be logged and you have access to this information via TX-TANGO
+- Two web services are foreseen: Get_PushedMessagesBackupSummary and Get_PushedMessagesBackup (follow the link to the TX-TANGO documentation of these web services)
+**How to use these recovery web services**
+- Call the Get_PushedMessagesBackupSummary once a day and check if their are failed messages
+- If yes, then use Get_PushedMessagesBackup to retrieve only those failed messages
