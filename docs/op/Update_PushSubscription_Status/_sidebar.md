@@ -1,5 +1,5 @@
-<!-- docs/CopyAndReplaceWithYourFunction/_sidebar.md -->
+<!-- docs/Update_PushSubscriptionStatus/_sidebar.md -->
 
 * [Home](/)
 * [Operations](/op/)
-* [CopyAndReplaceWithYourFunction](/op/CopyAndReplaceWithYourFunction/)
+* [Update_PushSubscriptionStatus](/op/Update_PushSubscriptionStatus/)

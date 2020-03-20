@@ -12,7 +12,7 @@
 - [Login block](/detail/loginblock.md)*
 - SubscriptionSelection* _SubscriptionSelection_
 	- Features*: _array of FeatureInfo_: an array of features that you want to subscibe to, with the endpoint where they need to be pushed
-		- Feature: FeatureInfo_
+		- Feature: _FeatureInfo_
 			- Feature: _string_: name of the feature that you would like to subscribe to
 			- FeatureParameters: _string_: JSON object containing a parameters structure that applies a filter on the feature you are subscribing to
          - StreamingTechnologyType: _string_: Currently always 'WebAPI'
