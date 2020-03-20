@@ -14,11 +14,14 @@
     window.$docsify = {
       name: 'TX-TANGO Web service documentation',
       repo: '',
-	  auto2top: true,
-	  loadSidebar: true,
-	  //logo: 'logo.png',
-	  search: 'auto', // default
-	  subMaxLevel: 4
+	    auto2top: true,
+	    loadSidebar: true,
+	    //logo: 'logo.png',
+	    search: 'auto', // default
+      subMaxLevel: 4,
+      markdown: {
+        breaks: true
+      }
     }
   </script>
   <script src="//unpkg.com/docsify/lib/docsify.min.js"></script>
