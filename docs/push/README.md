@@ -13,6 +13,7 @@
 ### Subscriptions
 - In order to receive the data on your endpoint you need to subscribe and provide us the URL.
 - The subscription consists of two parts: The feature and the technology.
+- **IMPORTANT** - a subscription is per INTEGRATOR, so you can only subcribe to a feature once per INTEGRATOR (see [Login block](/detail/loginblock.md)), a second subscription to the same feature will overwrite the previous one.
 
 **Feature**
 - With the feature you choose the data and the filter on that data
