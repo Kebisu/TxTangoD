@@ -2,4 +2,4 @@
 
 * [Home](/)
 * [Operations](/op/)
-* [PUSH](/push/)
+* [Push](/push/)

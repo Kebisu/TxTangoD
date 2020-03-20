@@ -22,3 +22,5 @@
 - [Add_PushSubcriptions](op/Add_PushSubscriptions/): Subscribe to a push data
 - [Update_PushSubscriptions_Status](op/Update_PushSubscriptions_Status/): Activate or deactivate a subscription
 - [Get_PushSubscriptions](/op/Get_PushSubscriptions/): Get the list of subscriptions
+- [Get_PushedMessagesBackupSummary](/op/Get_PushedMessagesBackupSummary/) check if their are failed messages
+- [Get_PushedMessagesBackup](/op/Get_PushedMessagesBackup/) to retrieve those failed messages

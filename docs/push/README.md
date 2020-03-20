@@ -82,8 +82,8 @@
 - But what if there are connection issues, server problems, ... and the message cannot be pushed.
 - That's why we have foreseen a backup/recovery mechanism.
 - If we cannot deliver a message after a couple of retries, this will be logged and you have access to this information via TX-TANGO
-- Two web services are foreseen: Get_PushedMessagesBackupSummary and Get_PushedMessagesBackup (follow the link to the TX-TANGO documentation of these web services)
+- Two web services are foreseen: [Get_PushedMessagesBackupSummary](/op/Get_PushedMessagesBackupSummary/) and [Get_PushedMessagesBackup](/op/Get_PushedMessagesBackup/) (follow the link to the TX-TANGO documentation of these web services)
 
 **How to use these recovery web services**
-- Call the Get_PushedMessagesBackupSummary once a day and check if their are failed messages
-- If yes, then use Get_PushedMessagesBackup to retrieve only those failed messages
+- Call the [Get_PushedMessagesBackupSummary](/op/Get_PushedMessagesBackupSummary/) once a day and check if their are failed messages
+- If yes, then use [Get_PushedMessagesBackup](/op/Get_PushedMessagesBackup/) to retrieve only those failed messages
