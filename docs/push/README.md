@@ -1,9 +1,9 @@
 <!-- docs/op/push/README.md -->
 # PUSH Technology
 
-> With push we can sent data directly to your server as it becomes available on our side.
-> Data that can currently be pushed: Alarms
-> The only push technology that we are currently supporting is WebAPI.
+> With push we can sent data directly to your server as it becomes available on our side.  
+> Data that can currently be pushed: Alarms  
+> The only push technology that we are currently supporting is WebAPI.  
 
 ## Technology
 ### WebAPI
