@@ -1,7 +1,7 @@
 <!-- docs/op/push/README.md -->
 # PUSH Technology
 
-> We are adding the option to get data pushed to your server.
+> With push we can sent data directly to your server as it becomes available on our side.
 > Data that can currently be pushed: Alarms
 > The only push technology that we are currently supporting is WebAPI.
 
