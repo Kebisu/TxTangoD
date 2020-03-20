@@ -1,7 +1,7 @@
 <!-- docs/op/Get_PushedMessagesBackup/README.md -->
 # Get_PushedMessagesBackup
 
-> Get the list of pushed messages for a certain period
+> Get the list of pushed messages for a certain period  
 > Useful to retrieve the messages that were not pushed or in exceptional cases the messages that were pushed but not procesed by your backend.
 
 ## Version info
