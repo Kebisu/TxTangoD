@@ -1,7 +1,8 @@
 <!-- docs/op/Get_PushedMessagesBackupSummary/README.md -->
 # Get_PushedMessagesBackupSummary
 
-> A web service to see how many messages were pushed and how many failed. To check if you need to use the backup retrieval method [Get_PushedMessagesBackup](/op/Get_PushedMessagesBackup/) or not
+> A web service to see how many messages were pushed and how many failed. 
+> To check if you need to use the backup retrieval method [Get_PushedMessagesBackup](/op/Get_PushedMessagesBackup/) or not
 
 ## Version info
 - There is only one version

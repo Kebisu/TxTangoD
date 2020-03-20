@@ -1,4 +1,4 @@
-<!-- docs/CopyAndReplaceWithYourFunction/_sidebar.md -->
+<!-- docs/push/_sidebar.md -->
 
 * [Home](/)
 * [Operations](/op/)
