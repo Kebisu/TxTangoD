@@ -13,9 +13,11 @@
 ### Subscriptions
 - In order to receive the data on your endpoint you need to subscribe and provide us the URL.
 - The subscription consists of two parts: The feature and the technology.
+
 **Feature**
 - With the feature you choose the data and the filter on that data
 - Currently the only feature is _NewAlarm_ and you can filter on the type of alarms.
+
 **Technology**
 - The technology is how and where we need to push data
 - Currently the only technology we support is WebAPI and the detail we need is the URL
@@ -25,8 +27,9 @@
 			"URL": "https://ar.azure-api.net/tran......"
 		}
 	```
+
 **TX-TANGO**
-- The subscriptions are managed via TX-TANGO: [Add_PushSubscriptions](/op/Add_PushSubscriptions/README.md), Update_PushSubscriptions_Status, Get_Subscriptions
+- The subscriptions are managed via TX-TANGO: [Add_PushSubscriptions](/op/Add_PushSubscriptions/), [Update_PushSubscriptions_Status](/op/Update_PushSubscriptions_Status/), [Get_Subscriptions](/op/Get_PushSubscriptions/)
 - See each TX-TANGO web service for more details
 
 ## Data
@@ -42,6 +45,7 @@
 		'AlarmPOIEnrichmentRequired': 1
 		}
 	```
+
 **Example of a pushed alarm message**
 ```json
 {
@@ -78,6 +82,7 @@
 - That's why we have foreseen a backup/recovery mechanism.
 - If we cannot deliver a message after a couple of retries, this will be logged and you have access to this information via TX-TANGO
 - Two web services are foreseen: Get_PushedMessagesBackupSummary and Get_PushedMessagesBackup (follow the link to the TX-TANGO documentation of these web services)
+
 **How to use these recovery web services**
 - Call the Get_PushedMessagesBackupSummary once a day and check if their are failed messages
 - If yes, then use Get_PushedMessagesBackup to retrieve only those failed messages
