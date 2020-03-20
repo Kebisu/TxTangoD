@@ -9,6 +9,7 @@ The ExecutionResult contains a list of errors, a list of warnings and the execut
 
 ## Example code
 ```csharp
+
     private bool IsValidResult(IWS.ExecutionResult response)
     {
         bool isValid = true;
@@ -25,4 +26,5 @@ The ExecutionResult contains a list of errors, a list of warnings and the execut
         }
         return isValid;
     }
+    
 ```
