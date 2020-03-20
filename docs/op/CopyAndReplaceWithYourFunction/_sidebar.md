@@ -3,3 +3,4 @@
 * [Home](/)
 * [Operations](/op/)
 * [CopyAndReplaceWithYourFunction](/op/CopyAndReplaceWithYourFunction/)
+* [Push](/push/)

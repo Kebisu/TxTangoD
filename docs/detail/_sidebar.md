@@ -1,5 +1,6 @@
-<!-- docs/_sidebar.md -->
+<!-- docs/detail/_sidebar.md -->
 
 * [Home](/)
 * [Operations](/op/)
-* [General](.)
+* [Push](/push/)
+* [General](/detail/)
