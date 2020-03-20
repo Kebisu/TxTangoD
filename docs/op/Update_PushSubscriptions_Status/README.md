@@ -1,5 +1,5 @@
-<!-- docs/op/Update_PushSubscriptionStatus/README.md -->
-# Update_PushSubscriptionStatus
+<!-- docs/op/Update_PushSubscriptions_Status/README.md -->
+# Update_PushSubscriptions_Status
 
 > Deactivate of reactivate a previously created subscription
 
