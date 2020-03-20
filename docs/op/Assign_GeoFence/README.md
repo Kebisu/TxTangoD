@@ -1,10 +1,10 @@
 <!-- docs/op/Assign_GeoFence/README.md -->
 # Assign_GeoFence
 
-> Assign one or more geofences from one or more vehicles
+> Assign one or more geofences from one or more vehicles, trailers or groups
 
 ## Version info
-- There's is only one version
+- V2: You can now also assign geofences to groups
 
 ## Request
 \* is mandatory

@@ -1,7 +1,7 @@
-<!-- docs/op/Assign_GeoFence/README.md -->
-# Assign_GeoFence
+<!-- docs/op/Add_PushSubscriptions/README.md -->
+# Add_PushSubscriptions
 
-> Assign one or more geofences from one or more vehicles
+> Subscribe to receive data, indicate which data and where it needs to be send to
 
 ## Version info
 - There's is only one version
@@ -14,7 +14,7 @@
 	- Features*: _array of FeatureInfo_: an array of features that you want to subscibe to, with the endpoint where they need to be pushed
 		- Feature: FeatureInfo_
 			- Feature: _string_: name of the feature that you would like to subscribe to
-			- FeatureParameters: _string_: JSON object containing a parameters structure that matches the feature you are subscribing to
+			- FeatureParameters: _string_: JSON object containing a parameters structure that applies a filter on the feature you are subscribing to
          - StreamingTechnologyType: _string_: Currently always 'WebAPI'
          - StreamingTechnologyDetails: _string_: JSON object containing the URL of the WebAPI
 
@@ -37,7 +37,7 @@ Derived from result object, contains Errors and Warnings: See [result object](/d
             <tran:Features>
                <tran:FeatureInfo>
                   <tran:Feature>NewAlarm</tran:Feature>
-                  <tran:FeatureParameters>{'AlarmTypes':['Geofencing','ActivityTakesTooLong','DeadlineReadConfirmation','PlanningActivityTakesTooLong','ExternalDevice','CorridorAlarm','LowBattery','Pto','SpeedThresHold','RpmThresHold','EndQuestionPathNotCompletedAlarm','NextStop','Sos','DrivingTimes','Temperature','FuelDecreaseAlarm','HarshBrakeAlarm','DrivingWithoutIsoCableAlarm','RollOverStabilitySupportAlarm','EbsStateAlarm','TyrePressureAlarm','DoorlockAlarm','SensorAlarm','DynamicAlarm','RemoteDiagnosticsAlarm','NoCommunicationAlarm','UnknownDriverForObc','HarshAccelerationAlarm','MaxIdlingAlarm','FuelIncreaseAlarm','SufficientBrakeLiningAlarm','AntiLockBrakingSystemAlarm'],'AlarmPOIEnrichmentRequired':1}</tran:FeatureParameters>
+                  <tran:FeatureParameters>{'AlarmTypes':['Geofencing','DrivingTimes','DynamicAlarm'],'AlarmPOIEnrichmentRequired':1}</tran:FeatureParameters>
                   <tran:StreamingTechnologyType>WebAPI</tran:StreamingTechnologyType>
                   <tran:StreamingTechnologyDetails>{"URL":"https://webhook.site/...."}</tran:StreamingTechnologyDetails>
                </tran:FeatureInfo>
