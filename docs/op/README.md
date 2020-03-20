@@ -21,4 +21,4 @@
 ## PUSH
 - [Add_PushSubcriptions](op/Add_PushSubscriptions/): Subscribe to a push data
 - [Update_PushSubscription_Status](op/Update_PushSubscription_Status/): Activate or deactivate a subscription
-- [Get_PushSubscriptions](/op/Get_PushSubscriptions): Get the list of subscriptions
+- [Get_PushSubscriptions](/op/Get_PushSubscriptions/): Get the list of subscriptions
